@@ -79,7 +79,7 @@ section:nth-child(even) {
     background-color: darkgoldenrod;
 }
 
-@media(max-width: 700px) {
+@media(max-width: 800px) {
     .section-grid-wrap {
         display: flex;
         flex-direction: column;
@@ -93,12 +93,15 @@ section:nth-child(even) {
 .reveal-effect {
     opacity: 0;
     transform: translateY(30px);
+    filter: blur(100px);
     transition: 1s ease-out;
+    
 }
 
 .reveal-effect.show {
     opacity: 1;
     transform: translateY(0);
+    filter: blur(0px);
     transition: 1s ease-out;
 }
 
